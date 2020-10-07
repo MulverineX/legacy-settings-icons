@@ -55,6 +55,10 @@ $icons-linux: (
     html.platform-win .layer-3QrUeG[aria-label=USER_SETTINGS] .side-8zPYf6 >
     .item-PXvHYJ:nth-child(#{$id})::before {
         --icon: #{svg("./icons/default/" + $name + ".svg")};
+        
+        @if $name == logout {
+            --settings-icon-color: var(--settings-logout)
+        }
     }
 }
 /* Linux, & MacOS */
@@ -69,6 +73,10 @@ $icons-linux: (
     html.platform-osx .layer-3QrUeG[aria-label=USER_SETTINGS] .side-8zPYf6 >
     .item-PXvHYJ:nth-child(#{$id})::before {
         --icon: #{svg("./icons/default/" + $name + ".svg")};
+        
+        @if $name == logout {
+            --settings-icon-color: var(--settings-logout)
+        }
     }
 }
 /* Linux */
@@ -76,5 +84,9 @@ $icons-linux: (
     html.platform-linux .layer-3QrUeG[aria-label=USER_SETTINGS] .side-8zPYf6 >
     .item-PXvHYJ:nth-child(#{$id})::before {
         --icon: #{svg("./icons/default/" + $name + ".svg")};
+        
+        @if $name == logout {
+            --settings-icon-color: var(--settings-logout)
+        }
     }
 }

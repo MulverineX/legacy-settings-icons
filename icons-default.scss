@@ -14,7 +14,7 @@ $icons-default: (
         @if $name ==        subscriptions {
             --settings-icon-color: var(--settings-subscriptions);
         } @else if $name == hypesquad {
-            --settings-icon-color: var(--settings-hypesquad)
+            --settings-icon-color: var(--settings-hypesquad);
         }
     }
 }

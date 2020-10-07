@@ -1,0 +1,80 @@
+@import "icon-layout";
+@import "icon-shared-ids";
+@import "icons-default";
+
+
+// IDs manually scraped from https://github.com/codedotspectra/themes/blob/master/mini-themes/settingsIcons.css
+
+/*Variables*/
+.theme-dark {
+    --settings-icon-color: white;
+  
+    --settings-subscriptions: #80a6ff;
+    --settings-hypesquad: #fbb848;
+    --settings-logout: #f04747;
+  }
+.theme-light {
+    --settings-icon-color: #4f5660;
+
+    --settings-subscriptions: #80a6ff;
+    --settings-hypesquad: #fbb848;
+    --settings-logout: #f04747;
+}
+
+/* Loader */
+$icons-betterdiscord: (
+    general: 3,
+    extra: 4, // bandages
+    custom: 6, // custom css
+    plugins: 7, themes: 8
+);
+
+@each $name, $id in $icons-betterdiscord {
+    #bd-settings-sidebar > .ui-tab-bar-item
+    :nth-child(#{$id})::before {
+        --icon: #{svg("./icons/loader/" + $name + ".svg")};
+    }
+}
+
+/* Platform Specific */
+$icons-windows: (
+    overlay: 15, notifications: 16,
+    keybinds: 17, game-activity: 18,
+    text-images: 19, appearance: 20, 
+    streamer-mode: 21, language: 22,
+    os-settings: 23, changelog: 25,
+    logout: 28
+);
+
+$icons-linux: (
+    os-settings: 22, changelog: 24,
+    logout: 27
+);
+
+@each $name, $id in $icons-windows {
+    html.platform-win .layer-3QrUeG[aria-label=USER_SETTINGS] .side-8zPYf6 >
+    .item-PXvHYJ:nth-child(#{$id})::before {
+        --icon: #{svg("./icons/default/" + $name + ".svg")};
+    }
+}
+/* Linux, & MacOS */
+@each $name, $id in $icons-alt {
+    html:not(.platform-win) .layer-3QrUeG[aria-label=USER_SETTINGS] .side-8zPYf6 >
+    .item-PXvHYJ:nth-child(#{$id})::before {
+        --icon: #{svg("./icons/default/" + $name + ".svg")};
+    }
+}
+/* MacOS */
+@each $name, $id in $icons-basic {
+    html.platform-osx .layer-3QrUeG[aria-label=USER_SETTINGS] .side-8zPYf6 >
+    .item-PXvHYJ:nth-child(#{$id})::before {
+        --icon: #{svg("./icons/default/" + $name + ".svg")};
+    }
+}
+/* Linux */
+@each $name, $id in $icons-linux {
+    html.platform-linux .layer-3QrUeG[aria-label=USER_SETTINGS] .side-8zPYf6 >
+    .item-PXvHYJ:nth-child(#{$id})::before {
+        --icon: #{svg("./icons/default/" + $name + ".svg")};
+    }
+}

@@ -1,0 +1,22 @@
+$icons-default: (
+    account: 2, privacy-saftey: 3,
+    authorized-apps: 4, connections: 5,
+    billing: 6, subscriptions: 8,
+    gift-inventory: 9, server-boost: 10,
+    hypesquad: 11, voice-video: 14
+);
+
+@each $name, $id in $icons-default {
+    .layer-3QrUeG[aria-label=USER_SETTINGS] .side-8zPYf6 >
+    .item-PXvHYJ:nth-child(#{$id})::before {
+        --icon: #{svg("./icons/default/" + $name + ".svg")};
+
+        @if $name ==        subscriptions {
+            --settings-icon-color: var(--settings-subscriptions);
+        } @else if $name == hypesquad {
+            --settings-icon-color: var(--settings-hypesquad)
+        } @else if $name == logout {
+            --settings-icon-color: var(--settings-hypesquad)
+        }
+    }
+}

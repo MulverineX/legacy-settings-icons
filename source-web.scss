@@ -1,0 +1,37 @@
+@import "icon-layout";
+@import "icon-shared-ids";
+@import "icons-default";
+
+
+// IDs manually scraped from https://github.com/codedotspectra/themes/blob/master/mini-themes/settingsIcons.css
+
+/*Variables*/
+.theme-dark {
+    --settings-icon-color: white;
+  
+    --settings-subscriptions: #80a6ff;
+    --settings-hypesquad: #fbb848;
+    --settings-logout: #f04747;
+  }
+.theme-light {
+    --settings-icon-color: #4f5660;
+
+    --settings-subscriptions: #80a6ff;
+    --settings-hypesquad: #fbb848;
+    --settings-logout: #f04747;
+}
+
+
+/* Platform Specific */
+@each $name, $id in $icons-alt {
+    .layer-3QrUeG[aria-label=USER_SETTINGS] .side-8zPYf6 >
+    .item-PXvHYJ:nth-child(#{$id})::before {
+        --icon: #{svg("./icons/default/" + $name + ".svg")};
+    }
+}
+@each $name, $id in $icons-basic {
+    .layer-3QrUeG[aria-label=USER_SETTINGS] .side-8zPYf6 >
+    .item-PXvHYJ:nth-child(#{$id})::before {
+        --icon: #{svg("./icons/default/" + $name + ".svg")};
+    }
+}

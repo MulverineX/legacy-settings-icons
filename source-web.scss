@@ -33,13 +33,7 @@ $icons: (
     .layer-3QrUeG[aria-label=USER_SETTINGS] .side-8zPYf6 >
     .item-PXvHYJ:nth-child(#{$id})::before {
         --icon: #{svg("./icons/default/" + $name + ".svg")};
-    }
-}
-@each $name, $id in $icons-basic {
-    .layer-3QrUeG[aria-label=USER_SETTINGS] .side-8zPYf6 >
-    .item-PXvHYJ:nth-child(#{$id})::before {
-        --icon: #{svg("./icons/default/" + $name + ".svg")};
-        
+
         @if $name == logout {
             --settings-icon-color: var(--settings-logout);
         }

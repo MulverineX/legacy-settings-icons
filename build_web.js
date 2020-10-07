@@ -19,7 +19,7 @@ let userstyle = `
 }
 `.trim();
 
-const styles = fs.readFileSync("dist-native.css").toString();
+const styles = fs.readFileSync("dist-web.css").toString();
 
 userstyle = userstyle.replace('$replace$', styles.trim());
 

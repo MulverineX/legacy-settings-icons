@@ -29,7 +29,7 @@ jobs:
         run: |
           git config --local user.email 'action@github.com'
           git config --local user.name 'GitHub Action'
-          git add ./source.css
+          git add ./dist-web.css
           git diff-index --quiet HEAD || git commit -m 'Updates compiled CSS files'
 
       - name: Push changes

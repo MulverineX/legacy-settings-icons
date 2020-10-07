@@ -46,10 +46,17 @@ $icons-windows: (
     logout: 28
 );
 
-$icons-linux: (
-    os-settings: 22, changelog: 24,
-    logout: 27
+$icons-unix: (
+    notifications: 15, keybinds: 16,
+    game-activity: 17, text-images: 18,
+    appearance: 19, streamer-mode: 20,
+    language: 21
 );
+
+$icons-linux: ( os-settings: 22, changelog: 24, logout: 27 );
+
+$icons-macos: ( changelog: 23, logout: 26 );
+
 
 @each $name, $id in $icons-windows {
     html.platform-win .layer-3QrUeG[aria-label=USER_SETTINGS] .side-8zPYf6 >
@@ -61,15 +68,16 @@ $icons-linux: (
         }
     }
 }
+
 /* Linux, & MacOS */
-@each $name, $id in $icons-alt {
+@each $name, $id in $icons-unix {
     html:not(.platform-win) .layer-3QrUeG[aria-label=USER_SETTINGS] .side-8zPYf6 >
     .item-PXvHYJ:nth-child(#{$id})::before {
         --icon: #{svg("./icons/default/" + $name + ".svg")};
     }
 }
-/* MacOS */
-@each $name, $id in $icons-basic {
+
+@each $name, $id in $icons-macos {
     html.platform-osx .layer-3QrUeG[aria-label=USER_SETTINGS] .side-8zPYf6 >
     .item-PXvHYJ:nth-child(#{$id})::before {
         --icon: #{svg("./icons/default/" + $name + ".svg")};
@@ -79,7 +87,7 @@ $icons-linux: (
         }
     }
 }
-/* Linux */
+
 @each $name, $id in $icons-linux {
     html.platform-linux .layer-3QrUeG[aria-label=USER_SETTINGS] .side-8zPYf6 >
     .item-PXvHYJ:nth-child(#{$id})::before {

@@ -1,5 +1,4 @@
 @import "icon-layout";
-@import "icon-shared-ids";
 @import "icons-default";
 
 
@@ -23,7 +22,14 @@
 
 
 /* Platform Specific */
-@each $name, $id in $icons-alt {
+$icons-web: (
+    notifications: 15, text-images: 16,
+    appearance: 17, streamer-mode: 18,
+    language: 19, changelog: 21,
+    logout: 23
+);
+
+@each $name, $id in $icons {
     .layer-3QrUeG[aria-label=USER_SETTINGS] .side-8zPYf6 >
     .item-PXvHYJ:nth-child(#{$id})::before {
         --icon: #{svg("./icons/default/" + $name + ".svg")};

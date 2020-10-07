@@ -57,7 +57,7 @@ $icons-linux: (
         --icon: #{svg("./icons/default/" + $name + ".svg")};
         
         @if $name == logout {
-            --settings-icon-color: var(--settings-logout)
+            --settings-icon-color: var(--settings-logout);
         }
     }
 }
@@ -75,7 +75,7 @@ $icons-linux: (
         --icon: #{svg("./icons/default/" + $name + ".svg")};
         
         @if $name == logout {
-            --settings-icon-color: var(--settings-logout)
+            --settings-icon-color: var(--settings-logout);
         }
     }
 }
@@ -86,7 +86,7 @@ $icons-linux: (
         --icon: #{svg("./icons/default/" + $name + ".svg")};
         
         @if $name == logout {
-            --settings-icon-color: var(--settings-logout)
+            --settings-icon-color: var(--settings-logout);
         }
     }
 }

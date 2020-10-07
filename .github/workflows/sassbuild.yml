@@ -19,17 +19,24 @@ jobs:
       - name: Make destination directory for compiled CSS
         run: mkdir -vp /tmp/repo-name/assets/css
 
-      - name: Compile CSS from SCSS files
+      - name: Compile CSS from Web SCSS file
         uses: ADoesGit/sass-build@master
         with:
           source: source-web.scss
           destination: dist-web.css
+
+      - name: Compile CSS from Native SCSS file
+        uses: ADoesGit/sass-build@master
+        with:
+          source: source-native.scss
+          destination: dist-native.css
 
       - name: Add and Commit changes
         run: |
           git config --local user.email 'action@github.com'
           git config --local user.name 'GitHub Action'
           git add ./dist-web.css
+          git add ./dist-native.css
           git diff-index --quiet HEAD || git commit -m 'Updates compiled CSS files'
 
       - name: Push changes

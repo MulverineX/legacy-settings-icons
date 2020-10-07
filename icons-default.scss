@@ -16,7 +16,7 @@ $icons-default: (
         } @else if $name == hypesquad {
             --settings-icon-color: var(--settings-hypesquad)
         } @else if $name == logout {
-            --settings-icon-color: var(--settings-hypesquad)
+            --settings-icon-color: var(--settings-logout)
         }
     }
 }

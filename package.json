@@ -1,0 +1,19 @@
+{
+  "name": "legacy-settings-icons",
+  "version": "1.0.0",
+  "description": "Add neat looking icons to the settings menu",
+  "main": "index.js",
+  "scripts": {
+    "build": "node build_web.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MulverineX/legacy-settings-icons.git"
+  },
+  "author": "MulverineX",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/MulverineX/legacy-settings-icons/issues"
+  },
+  "homepage": "https://github.com/MulverineX/legacy-settings-icons#readme"
+}

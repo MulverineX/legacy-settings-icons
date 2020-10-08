@@ -48,10 +48,11 @@ $icons-linux: ( os-settings: 22, changelog: 24, logout: 27 );
 
 $icons-macos: ( changelog: 23, logout: 26 );
 
+$selector: ".layer-3QrUeG[aria-label=USER_SETTINGS] .side-8zPYf6>.item-PXvHYJ";
+
 
 @each $name, $id in $icons-windows {
-    html.platform-win .layer-3QrUeG[aria-label=USER_SETTINGS] .side-8zPYf6 >
-    .item-PXvHYJ:nth-child(#{$id})::before {
+    html.platform-win #{$selector}:nth-child(#{$id})::before {
         --icon: #{svg("./icons/default/" + $name + ".svg")};
         
         @if $name == logout {
@@ -62,15 +63,13 @@ $icons-macos: ( changelog: 23, logout: 26 );
 
 /* Linux, & MacOS */
 @each $name, $id in $icons-unix {
-    html:not(.platform-win) .layer-3QrUeG[aria-label=USER_SETTINGS] .side-8zPYf6 >
-    .item-PXvHYJ:nth-child(#{$id})::before {
+    html:not(.platform-win) #{$selector}:nth-child(#{$id})::before {
         --icon: #{svg("./icons/default/" + $name + ".svg")};
     }
 }
 
 @each $name, $id in $icons-macos {
-    html.platform-osx .layer-3QrUeG[aria-label=USER_SETTINGS] .side-8zPYf6 >
-    .item-PXvHYJ:nth-child(#{$id})::before {
+    html.platform-osx #{$selector}:nth-child(#{$id})::before {
         --icon: #{svg("./icons/default/" + $name + ".svg")};
         
         @if $name == logout {
@@ -80,8 +79,7 @@ $icons-macos: ( changelog: 23, logout: 26 );
 }
 
 @each $name, $id in $icons-linux {
-    html.platform-linux .layer-3QrUeG[aria-label=USER_SETTINGS] .side-8zPYf6 >
-    .item-PXvHYJ:nth-child(#{$id})::before {
+    html.platform-linux #{$selector}:nth-child(#{$id})::before {
         --icon: #{svg("./icons/default/" + $name + ".svg")};
         
         @if $name == logout {

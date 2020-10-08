@@ -15,10 +15,9 @@
 
 /* Loader */
 $icons-betterdiscord: (
-    general: 3,
-    extra: 4, // bandages
-    custom: 6, // custom css
-    plugins: 7, themes: 8
+    general: 3, emotes: 4, 
+    plugins: 5, themes: 6, 
+    custom: 7 // custom css
 );
 
 @each $name, $id in $icons-betterdiscord {

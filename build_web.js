@@ -23,4 +23,4 @@ const styles = fs.readFileSync("dist-web.css").toString();
 
 userstyle = userstyle.replace('$replace$', styles.trim());
 
-fs.writeFileSync("settings_icons.user.css", userstyle)
+fs.writeFileSync("legacy-settings-icons.user.css", userstyle)

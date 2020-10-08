@@ -12,7 +12,7 @@ Web:
 
 
 ## Preview
-![Preview](https://cdn.discordapp.com/attachments/756986970231668847/761772295726694420/unknown.png)
+![Preview](https://cdn.discordapp.com/attachments/755015869914152981/763564440401608735/unknown.png)
 
 
 ### Credits

@@ -22,8 +22,8 @@ $icons-betterdiscord: (
 );
 
 @each $name, $id in $icons-betterdiscord {
-    #bd-settings-sidebar > .ui-tab-bar-item
-    :nth-child(#{$id})::before {
+    #bd-settings-sidebar > 
+    .ui-tab-bar-item:nth-child(#{$id})::before {
         --icon: #{svg("./icons/loader/" + $name + ".svg")};
     }
 }

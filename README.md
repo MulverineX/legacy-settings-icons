@@ -20,4 +20,4 @@ Web:
 - [MulverineX](https://github.com/MulverineX): Port, organization, maintenance.
 - [Snapperito](https://github.com/Snapperito): Initial port/organization
 - [AAGaming](https://github.com/ADoesGit): Github Actions script to build files for performance.
-- Powercord Community: Fixing CSS & Contributing icons for their plugins
+- Powercord Community: Fixing CSS

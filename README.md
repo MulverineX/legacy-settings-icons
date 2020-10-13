@@ -16,8 +16,8 @@ Web:
 
 
 ### Credits
-- [ClearVision BD Theme](https://clearvision.gitlab.io/) ([source](https://github.com/ClearVision/ClearVision-v6/blob/master/src/settings/icons.scss)): Original indexes & icon selection. Art from Google Material & Material Design.
-- [MulverineX](https://github.com/MulverineX): Port & maintenance.
-- [Snapperito](https://github.com/Snapperito): Base layout css, all regular icons, maintenance.
+- [ClearVision BD Theme](https://clearvision.gitlab.io/) ([source](https://github.com/ClearVision/ClearVision-v6/blob/master/src/settings/icons.scss)): Original idea, layout css, icon indexes/selection (Material art)
+- [MulverineX](https://github.com/MulverineX): Port, organization, maintenance.
+- [Snapperito](https://github.com/Snapperito): Initial port/organization
 - [AAGaming](https://github.com/ADoesGit): Github Actions script to build files for performance.
-- Powercord Community: Fixing CSS
+- Powercord Community: Fixing CSS & Contributing icons for their plugins

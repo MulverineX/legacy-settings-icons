@@ -4,7 +4,7 @@ A discord theme compatible with most other themes. Adds neat looking icons to th
 Based off of [Powercord version](https://github.com/Snapperito/Settings-Icons) (Includes plugin icons and server settings icons!)
 
 ## Installation
-[BetterDiscord](http://betterdiscord.net/ghdl/?url=https://raw.githubusercontent.com/MulverineX/legacy-settings-icons/main/settings_icons.theme.css)
+[BetterDiscord](https://betterdiscord.net/ghdl?id=3396)
 
 Web:
 - Install [Stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=en) ([Firefox version](https://addons.mozilla.org/en-US/firefox/addon/styl-us/)).

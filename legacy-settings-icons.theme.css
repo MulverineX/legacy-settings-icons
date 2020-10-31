@@ -1,4 +1,12 @@
-//META{"name":"Settings Icons","description":"Adds neat looking icons to the settings menu","author":"MulverineX#0001","invite":"nFRHhDk","authorId":"178551656714076161","source":"https://github.com/MulverineX/legacy-settings-icons","version":"Auto"}*//
+/**
+ * @name Settings Icons
+ * @descriptionAdds neat looking icons to the settings menu
+ * @author MulverineX#0001
+ * @version 1.0.0
+ * @authorId 178551656714076161
+ * @website https://github.com/MulverineX/legacy-settings-icons
+ * @source https://github.com/MulverineX/legacy-settings-icons/legacy-settings-icons.theme.css
+ */
 
 @import url("https://mulverinex.github.io/legacy-settings-icons/dist-native.css");
 

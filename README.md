@@ -1,4 +1,6 @@
-# Settings List Icons ![.github/workflows/sassbuild.yml](https://github.com/MulverineX/legacy-settings-icons/workflows/.github/workflows/sassbuild.yml/badge.svg?branch=main&event=push)
+# Not Maintained
+Settings List Icons ![.github/workflows/sassbuild.yml](https://github.com/MulverineX/legacy-settings-icons/workflows/.github/workflows/sassbuild.yml/badge.svg?branch=main&event=push)
+
 A discord theme compatible with most other themes. Adds neat looking icons to the settings menu. Made for [BetterDiscord](https://rauenzi.github.io/BetterDiscordApp/), and [Stylus](https://add0n.com/stylus.html) (also known as Stylish)
 
 [Powercord version](https://github.com/Snapperito/Settings-Icons) (Includes plugin icons and server settings icons!)
